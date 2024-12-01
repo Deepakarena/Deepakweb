@@ -1,0 +1,84 @@
+<!doctype html>
+
+<html>
+<head>
+
+
+<title>Animation</title>
+</head>
+<style>
+@keyframes ani1
+{
+from{margin-left:400px;}
+to{margin-left:-6800px;}
+
+}
+
+@keyframes ani2
+{
+10%{color:red;}
+40%{color:green;background:yellow;}
+60%{color:yellow;background:red;}
+90%{color:magenta;background:black}
+}
+
+@keyframes blink
+{
+from{opacity:0}
+to{opacity:1;}
+}
+
+#news
+{
+background:black;
+color:white;
+font-size:50px;
+width:8000px;
+box-shadow:10px 10px 10px gray;
+padding:10px;
+text-transform:uppercase;
+font-family:caliber bold;
+margin-left:10px;
+//animation:ani2 15s infinite linear;
+overflow:hidden;
+
+}
+#text
+{
+margin-left:10px;
+animation:ani1 40s infinite linear;
+}
+
+#mask
+{
+width:500px;
+height:100px;
+//background:red;
+margin:auto;
+overflow:hidden;
+}
+.mystyle
+{
+animation:blink 1s infinite alternate;
+}
+
+</style>
+
+<body>
+<h1 style="text-align:center">Keyframes Animation</h1>
+<h2class="mystyle"Scrolling Text </h2>
+<div id="mask">
+
+<div id="news">
+<span id="text">
+
+Hello, I am Deepak Mehra student of Arena Animation at GTB Nagar Branch. I am Video Editor, Graphic and Web Designer. I am searching a good platform from where I can start my career.
+</p>
+</span>
+
+</div>
+
+
+</body>
+</html>
+
