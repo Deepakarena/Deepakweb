@@ -1,0 +1,537 @@
+<!doctype html>
+
+<html>
+<head>
+<title>iframe</title>
+<link href="main.css" rel="stylesheet" type="text/css">
+</head>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+
+<style>
+div,header,nav,sitepam,copyright,aside,article
+{
+//border:1px black solid;
+box-sizing:border-box;
+}
+
+
+html
+{
+scroll-behavior:smooth;
+}
+
+body
+{
+text-align:cernter;
+}
+header
+{
+margin:auto;
+width:95%;
+height:500px;
+margin-bottom:10px;
+//margin:0px 0px 0px 0px;
+
+}
+header img
+{
+width:100%;
+height:500px;
+}  
+
+
+nav 
+{
+margin:auto;
+width:70%;
+height:40PX;
+}
+
+nav ol li
+{
+list-style:none;
+display:inline;
+}
+
+
+
+
+#main
+{
+display:flex;
+//flex-direction:column;
+//flex-wrap:wrap;
+//justify-content:center;
+//justify-content:flex-start;
+//justify-content:flex-end;
+//justify-content: space-around;
+//align-items:center;
+//align-items:flex-start;
+//align-items:flex-end;
+//height:500px;
+//align-items:stretch;
+}
+
+
+
+#left
+{
+width:10%;
+
+}
+#left img
+{
+width:100%;
+}
+
+
+article
+{
+width:78%;
+padding:70px;
+text-align:justify;
+
+}
+
+
+aside
+{
+width:10%;
+}
+
+aside img
+{
+width:100%;
+box-shadow:5px 5px 5px gray;
+margin:2px;
+}
+
+footer
+{
+width:95%;
+display:flex;
+flex-direction:column;
+justify-content:center;
+justify-content: space-around;
+clear:both;
+}
+
+#copyright
+{
+width:100%;
+height:100px;
+margin;3%;
+
+}
+#sitemap
+{
+
+height:100px;
+width:100%;
+margin:3%;
+
+}
+
+#socialmedia
+{
+width:20%;
+height:100px;
+width:100%;
+margin:3%;
+
+}
+//implementing RWD
+img{max-width:50%;}
+
+
+/* Extra small devices (phones, 600px and down)*/
+
+@media only screen and (max-width:600px)
+{
+ //body{ background: green;}
+
+  header{height:200px;display:none;}
+  header img{height:100%;}
+
+  aside{display:none}
+#left{display:none}
+nav
+{
+//background:yellow;
+height:400px;
+}
+
+nav ol li
+{
+list-style:none;
+//background:red;
+display:block;
+margin-left:-40px;
+padding:20PX;
+}
+
+nav ol li:hover
+{
+background:lime;
+}
+
+article{width-100%}
+
+
+}
+
+
+
+/*Small devices (portrait tablets and large phones, 600px and up)*/
+
+@media only screen and (min-width: 600px)
+{
+
+  //body{background:yellow;}
+  header{height:300px; display:block}
+   header img{height:100%;}
+  nav 
+{
+background:yellow;
+width:100%;
+text-align:left;
+margin-left:-40px;
+}
+ nav ol li
+{
+//background:red;
+padding:2px;
+margin-left:-10px;
+
+
+}
+
+
+
+
+
+}
+
+/* Medium devices (landscape tablets, 768px and up)*/
+
+@media only screen and (min-width:768px)
+{
+   //  body{background:cyan;}
+header{height:400px; display:block}
+  header img{height:100%;}
+footer
+{
+flex-direction:row;
+}
+
+
+}
+
+
+/* Large devices (laptops/desktops, 992px and up)*/
+@media only screen and (min-width:992px)
+{
+ //body{background:orange;}
+header{height:500px; display:block}
+  header img{height:100%;}
+nav 
+{
+text-align:center;
+}
+
+
+}
+
+
+
+
+
+</style>
+
+<body>
+<header>
+<img src="images/p1.jpeg">
+
+</header>
+
+<nav>
+<ol>
+
+<li><a href="Layout3.html">Home</a></li>
+<li><a href="about.html">About us</a></li>
+<li><a href="meta1.html">Meta1</a></li>
+<li><a href="#">My Profile page</a></li>
+<li><a href="https://deepakarena.github.io/Deepakweb/</a></li>
+<li><a href="https://www.google.co.in/">GOOGLE</a></li>
+<li><a href="https://www.youtube.com/@dmcoachingclasses2909">MY YOUTUBE CHANNEL</a></li>
+<li><a href="https://www.behance.net/deepakmelande">BEHANCE</a></li>
+</ol>
+</nav>
+
+
+
+
+
+<div id="main">
+<div id="myframemenu">
+<ol>
+<li><a href="table.html">TABLE</a></li>
+<li><a href="bookmark.html">BOOKMARK</a></li>
+<li><a href="ani3.html">ANI3</a></li>
+<li><a href="Banner.html">BANNER</a></li>
+<li><a href="about.html">ABOUT</a></li>
+
+</ol>
+
+</div>
+
+
+
+	<div id="left">
+       <img src="images/Swan.jpg">
+     <img src="images/Swan.jpg">
+     <img src="images/Swan.jpg">
+       </div>
+
+       <article>
+
+<iframe name="box" width="100%" height="600" frameborder="no" scrolling="yes">
+your browser did not support iframe update your browser
+</iframe>
+
+<iframe width="914" height="514" src="https://www.youtube.com/embed/9ZsuFiQLVhQ" title="Delhi Sultanate (1206-1526) Khilji Dynasty Class-1 (1290-1320)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+<iframe width="914" height="514" src="https://www.youtube.com/embed/IjCJUK5Bhss" title="Coding and Decoding Class-2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+<iframe width="928" height="522" src="https://www.youtube.com/embed/qIgooHwboUE" title="DELHI POLICE CONSTABLE 2020 GS PRACTICE SET 2 | DELHI POLICE CONSTABLE PRACTICE SET| GS PRACTICE SET" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+<iframe width="928" height="522" src="https://www.youtube.com/embed/XvxsVziOFNE" title="बी. एड. स्पेशल सीरीज | History | Deepak Sir | CGS Coaching" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+
+</div>
+
+
+
+ </article>
+<footer>
+<div id="copyright">copy</div>
+<div id="sitemap">sitemap</div>
+<div id="socialmedia">Social Media</div>
+
+
+</footer>
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
