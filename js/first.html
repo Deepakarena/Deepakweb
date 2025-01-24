@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<script>
+
+</script>
+
+</head>
+<body>
+<script>
+    /*
+    DOM
+    */
+window.document.bgColor="yellow"
+
+document.write("<h><font face='arial black' > <u>Tata Product</u></font></h1>")
+document.fgColor ="green"
+document.write("<p style='font-size:40px;color:red'>Symbol of Quality</p>")
+//alert("Welcom")
+document.title="Ready"
+ //dilog boxes
+// alert(),prompt(),confirm()
+/*
+var uname = prompt("Enter your Name...?","undefined ")
+document.write("<h>")
+    document.write(uname)
+    document.write("</h1>")
+*/
+var ans = confirm("Want to change the background color")
+//alert(ans)
+  if(ans==true)
+       { 
+          document.bgColor = prompt("Which Color...?","cyan")
+       }
+       else
+       {
+           alert("background Color will not change")
+       }
+       
+</script>    
+</body>
+</html>
