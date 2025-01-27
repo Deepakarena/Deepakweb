@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+   #mes
+   {
+     font-size:50px;
+     color: teal;
+     font-family:Arial black;
+   }
+</style>
+<body>
+   <h1 id="topheading">Creating Element (Tag) by js</h1>  
+
+
+   <style>
+.pic
+{
+   margin:30px;
+   width:40%;
+   border-top: 20px ridge green;
+   transition:0.50s;
+
+}
+.textstyle
+{
+   width:50%;
+   padding:20px;
+   text-align:justify;
+   font-family:'Lucida Sans','Lucida Sansn Regular', 'Lucida Grande', 'Lucida Sans' 'Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+   </style>  
+
+
+   <script>
+   // using Already created element by js
+   // Finding Element (tag)
+   var textstyle = document.getElementById("topheading")
+   t.style.color="teal"
+
+   t.onmouseover= function()
+   {
+   t.style="transition:2s;cursor:pointer;font-size:40px;
+   t.innerHTML="Have you learn....!"
+
+   }
+
+   t.onmouseout= function()
+   {
+   t.style="transition:2s;font-size:30px;color:teal;"
+   t.innerHTML ="Creating Element(Tag) by js"   
+   }
+
+
+
+   // creating Element
+
+   var d = document.createElement("div")
+   document.body.appendChild(d)
+
+   d.innerHTML ="Video provides a powerful way to help you prove your point. When you click Online Video, you can paste in the embed code for the video you want to add. You can also type a keyword to search online for the video that best fits your document. To make your document look professionally produced, Word provides header, footer, cover page, and text box designs that complement each other. For example, you can add a matching cover page, header, and sidebar. Click Insert and then choose the elements you want from the different galleries. Themes and styles also help keep your document coordinated. When you click Design and choose a new Theme, the pictures, charts, and SmartArt graphics change to match your new theme. When you apply styles, your headings change to match the new theme. Save time in Word with new buttons that show up where you need them."
+   d.style.border="2px black dotted"
+   d.className="textstyle"
+
+   var mypic = document.createElement("img")
+   document.body.appendChild(mypic)
+   mypic.src="images/p1.jpg"
+   mypic.style="border-radius:20px;"
+   mypic.style.boxShadow="10px 10px 10px gray"
+   mypic.style.transform ="rotate(-10deg)"
+   document.title="Ready"
+   mypic.className="pic"
+
+
+   // Event handling
+
+   mypic.onmouseover = function()
+   {
+      mypic.style.transform ="rotate(0deg)"
+      mypic.style.cursor = "pointer"
+   }
+
+   mypic.onmouseout = function()
+   {
+      mypic.style.transform ="rotate(-10deg)"
+      mypic.style.cursor = "pointer"
+   }
+
+   mypic.onclick = function()
+   {
+         this.style.transform="scale(2)"
+   }
+
+
+   </script>
+
+
+</body>
+</html>
+
