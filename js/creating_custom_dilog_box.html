@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .mybox
+    {
+        width:30%;
+        border:1px solid black;
+        text-align:center;
+        padding:10px; 
+        font-size:30px;
+        color:red;
+        font-family:Arial black;
+        position:absolute;
+        transition: 0.50s;
+        left:25%;
+        top:25%;
+        transform:scale(1.50)
+    }
+</style>
+
+<body>
+    <h1>
+    Creating Custom Dilog Box
+    </h1>
+<script>
+ var box = document.createElement("div")
+ 
+  document.body.appendChild(box)
+  box.className="mybox"
+  box.innerHTML="<u>Billion Flipcart Sale</u><button id='closebutton' style='margin-left"
+  box.innerHTML+="<hr style='color:yellow'/>"
+  box.innerHTML+="<img style='width:100%' src='Images/flipcart.jpg'>"
+
+
+  var b = document.getElementById("closebutton")
+  b.onclick = function()
+  {
+box.style.opacity="0"
+
+  }
+</script>
+</body>
+</html>
