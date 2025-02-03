@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #mes
+    {
+        background:darkblue;
+        height:100px;
+        color:white;
+        font-size:40px;
+        font-family:Arial black;
+        padding:30px;
+        text-align:center;
+        box-shadow:10px 10px 10px gray;
+        margin-top:10px;
+        padding-top:5px;
+
+    }
+</style>
+<body>
+    <div id="mes">
+        News
+    </div>
+    <script>
+        var news = ["Will rename Talkatora to Valmiki stadium if BJP comes to power: Parvesh Verma","Kolkata RG Kar medical student, 20, found hanging inside her room: Reports","Abhishek Sharma records India's second-fastest T20I century; Wankhede carnage bamboozles England","Why did government increase income tax exemption from ₹7 lakh to ₹12 lakh? FM Nirmala Sitharaman explains","Old vs new tax regime: Which is better for you? A comparison after Union Budget 2025","Deva box office collection day 3: Shahid Kapoor, Pooja Hegde film close to making ₹20 crore"]
+
+
+        
+
+        var n = document.getElementById("mes")
+
+        var c = -1
+
+        function shownews()
+        {
+
+
+            
+
+
+      if(c>news.lenth-2)
+     {
+        c = 0
+        }
+        else
+        {
+            c++
+        }
+        n.innerHTML = news[c]
+        document.title = c
+
+
+
+        
+        setTimeout("shownews()",1000)
+    }
+
+    shownews()
+    </script>
+
+    
+</body>
+</html>
