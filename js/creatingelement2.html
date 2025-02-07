@@ -12,12 +12,8 @@
      color: teal;
      font-family:Arial black;
    }
-</style>
-<body>
-   <h1 id="topheading">Creating Element (Tag) by js</h1>  
 
 
-   <style>
 .pic
 {
    margin:30px;
@@ -26,6 +22,8 @@
    transition:0.50s;
 
 }
+
+
 .textstyle
 {
    width:50%;
@@ -35,13 +33,15 @@
 
 }
 
-   </style>  
-
-
+ </style>  
+ 
+ 
+ <body>
+  <h1 id="topheading">Creating Element (Tag) by js</h1>
    <script>
    // using Already created element by js
    // Finding Element (tag)
-   var textstyle = document.getElementById("topheading")
+   var t = document.getElementById("topheading")
    t.style.color="teal"
 
    t.onmouseover= function()
@@ -96,7 +96,7 @@
    {
          this.style.transform="scale(2)"
    }
-
+   document.title="No Error"
 
    </script>
 
