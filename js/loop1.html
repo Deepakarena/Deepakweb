@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .pic
+    {
+        width:20%;
+        box-shadow:10px 10px 10px gray;
+        cursor:pointer;
+        margin:50px;
+    }
+    body
+    {
+
+        text-align:center;
+
+    }
+</style>
+<body>
+<h1>Practice of Loop</h1>
+    <!--
+   Event in js
+   onclick,onmouseover,onmouseout,onkeypress,
+   onkeydown,onkeyuo,onmousedown,onmouseup,onLoad,
+   onfocous,onblur,onchange,ondbclick,
+    -->
+   <script>
+    /* Loop in js */
+    //for Loop :- syntax
+    for(var i = 1;i<=10;i++)
+   {
+    /*
+    if(i<8)
+   {
+   continue 
+   }
+   */
+  document.write("<a href='images/p"+i+".jpg'><img class='pic' src='images/p"+i+".jpg'></a>")
+
+
+if(i<=7)
+{
+  document.write("<a href='images/a"+i+".gif'><img class='pic' src='images/a"+i+".gif'></a>")
+}
+
+/*
+  if(i==3)
+{
+    break;
+}
+*/
+
+
+
+   }
+   document.title = "Ready"
+
+
+
+   </script>
+</body>
+</html>
