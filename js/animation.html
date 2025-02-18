@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+@keyframes show
+{
+from{opacity:0;height:10px;}
+to{opacity:1;height:360px;}
+}
+
+
+#menu{
+float:left;
+background:#3aabe0;
+width:200px;
+height:10px;
+padding:10px;
+text-align:center;
+boxshadow:10px 10px 10px gray;
+overflow:hidden;
+cursor:pointer;
+transition:1s;
+}
+
+#menu:hover
+{
+height:360px;
+}
+
+
+#menu ol{
+list-style:none;
+padding:0px;
+}
+
+#menu li
+{
+transition:2s;
+padding:20px;
+margin:-10px;
+}
+
+ol li:hover
+{
+background:teal;
+border-bottom:2px black solid;
+}
+a:link{color:black;text-decoration:none;}
+a:visited{color:white;}
+a:hover{text-decoration:underline;}
+
+
+</style>
+<body>
+<div style="width:70%;background:red;margin:auto;">
+<div id="menu">
+Menu
+<ol>
+<li><a href="#">Home</a>
+<li><a href="#">Product</a>
+<li><a href="#">Services</a>
+<li><a href="#">About</a>
+<li><a href="#">Data</a>
+<li><a href="#">Contact</a>
+</ol>
+</div>
+
+<div id="menu">
+Menu
+<ol>
+<li><a href="#">Home</a>
+<li><a href="#">Product</a>
+<li><a href="#">Services</a>
+<li><a href="#">About</a>
+<li><a href="#">Data</a>
+<li><a href="#">Contact</a>
+</ol>
+</div>
+
+
+<div id="menu">
+Menu
+<ol>
+<li><a href="#">Home</a>
+<li><a href="#">Product</a>
+<li><a href="#">Services</a>
+<li><a href="#">About</a>
+<li><a href="#">Data</a>
+<li><a href="#">Contact</a>
+</ol>
+</div>
+    
+</body>
+</html>
