@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .pic{
+    width:70%;
+    height:500px;
+    box-shadow:10px 10px 10px gray;
+    position:absolute;
+    left:15%;
+    transition:2.50s;
+
+    }
+</style>
+
+
+<body onLoad="run_banner()">
+<img id="p5"src="images/p1.jpg" class="pic">
+<img id="p4"src="images/p2.jpg" class="pic">
+<img id="p3"src="images/p3.jpg" class="pic">
+<img id="p2"src="images/p4.jpg" class="pic">
+<img id="p1"src="images/p5.jpg" class="pic">
+<script>
+var p1 = document.getElementById("p1")
+var p2 = document.getElementById("p2")
+var p3 = document.getElementById("p3")
+var p4 = document.getElementById("p4")
+var p5 = document.getElementById("p5")
+var c = 0
+function run_banner()
+{
+    c++
+       if(c>6)
+       {
+          c=1
+       }
+
+       switch(c)
+       {
+            case 1:
+            p1.style.left ="-1500px"
+
+            break;
+
+            case 2:
+            p2.style.left ="-1500px"
+
+            break;
+
+            case 3:
+            p3.style.left ="-1500px"
+            p3.style.opacity = 0
+            break;
+
+            case 4:
+            p4.style.left ="-1500px"
+            p4.style.opacity = 0
+            break;
+
+            case 5:
+
+            break;
+            case 6:
+            p1.style.opacity = 1
+            p2.style.opacity = 1
+            p3.style.opacity = 1
+            p4.style.opacity = 1
+            p1.style.left ="15%"
+            p2.style.left ="15%"
+            p3.style.left ="15%"
+            p4.style.left ="15%"
+
+
+
+            break;
+
+       }
+
+
+       document.title = 
+       setTimeout("run_banner()",6000)
+}
+
+
+
+document.title="Ready"
+
+</script>
+    
+</body>
+</html>
