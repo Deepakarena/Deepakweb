@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List</title>
+</head>
+<h1 style="color:teal;text-align:center;">Web Photo Gallery</h1>
+<style>
+
+.picstyle
+{
+width:35%;
+display:block;
+box-shadow:10px 10px 10px gray;
+margin:auto;
+transition:1.50s;
+}
+
+.space
+{
+    height:400px;
+}
+</style>
+
+<body>
+
+<img id="pic1" class="picstyle" src="images/p1.jpg" title="Click To Zoom" alt="nature pic" border="0">
+
+<div class="space"></div>
+
+<img id="pic2" class="picstyle" src="images/p2.jpg" title="Click To Zoom" alt="nature pic" border="0">
+
+<div class="space"></div>
+
+<img id="pic3" class="picstyle" src="images/p3.jpg" title="Click To Zoom" alt="nature pic" border="0">
+
+<div class="space"></div>
+
+<img id="pic4" class="picstyle" src="images/p4.jpg" title="Click To Zoom" alt="nature pic" border="0">
+
+
+<div class="space"></div>
+
+
+<div class="space"></div>
+
+<script>
+
+    var s = 0
+    var p1 = document.getElementById("pic1")
+    var p2 = document.getElementById("pic2")
+    var p3 = document.getElementById("pic3")
+    var p4 = document.getElementById("pic4")
+
+
+    window.onscroll = function()
+    {
+    s = Math.round(window.scrollY)
+    if(s>=211)
+    {p1.style.transform="scale(0)"}
+    if(s<=211){p1.style.transform="scale(1)"}
+
+    if(s>=800)
+    {p2.style.transform="scale(0)"}
+    if(s<=800){p2.style.transform="scale(1)"}
+
+    if(s>=1500)
+    {p3.style.transform="scale(0)"}
+    if(s<=1500){p3.style.transform="scale(1)"}
+
+    if(s>=2000)
+    {p4.style.transform="scale(0)"}
+    if(s<=2000){p4.style.transform="scale(1)"}
+
+
+
+document.title = s;
+
+
+    }
+</script>
+
+
+
+</body>
+</html>
