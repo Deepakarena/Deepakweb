@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <style>
+        .pic 
+        {
+            width:400px;
+            height:200px;
+            position:relative;
+            left:0px;
+        }
+
+        #banner
+        {
+        width:300%;
+
+        background:red;
+        margin-left:200px;
+        transition:0.50s;
+        }
+
+        #mask
+        {
+            width:200px;
+            overflow:hidden;
+            margin-left:200;
+            background:green;
+        }
+
+    </style>
+
+<body>
+    
+    <div id="banner">
+        <img src="images/p1.jpg" class="pic">
+        <img src="images/p2.jpg" class="pic">
+        <img src="images/p3.jpg" class="pic">
+        <img src="images/p4.jpg" class="pic">
+        <img src="images/p5.jpg" class="pic">
+        <img src="images/p6.jpg" class="pic">
+        <img src="images/p8.jpg" class="pic">
+        <img src="images/p9.jpg" class="pic">
+        <img src="images/p10.jpg" class="pic">
+        <img src="images/p22.jpg" class="pic">
+        <img src="images/p18.jpg" class="pic">
+    </div>
+
+
+    <div style="text-align:center;">
+
+    <button id="next">Next</button>
+    <span style="display:inline-block;width:35%"></span>
+    <button id="prev">Previous</button>
+    </div>
+    <script>
+        var n = document.getElementById("next")
+        var p = document.getElementById("prev")
+        var b = document.getElementById("banner")
+
+        var c = 0;
+        n.onclick = function()
+        {
+            c-=400
+            //b.style.left = c+"px"
+            b.style.marginLeft = c+"px"
+
+
+            document.title =c
+        }
+    </script>
+</body>
+</html>
