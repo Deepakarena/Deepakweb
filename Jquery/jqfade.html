@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<style>
+    #main
+    {
+        text-align:center;
+        font-size:100px;
+        box-shadow:10px 10px 10px gray;
+        margin:auto;
+    }
+    .text
+    {
+        border:2px black dashed;
+        padding:40px;
+        text-align:justify;
+    }
+    
+    .h2
+    {
+        cursor:pointer;
+    }
+
+    #p1
+    {
+        width:30%;
+        display:block;
+        margin:auto;
+    }
+</style>
+
+
+<body>
+    <div id="main">
+        Jquery FadeIn/Out/To
+    </div>
+    <h1 id="top" style="cursor:pointer"> Todays Topic</h1>
+    <div style="height:100px;">
+
+    </div>
+
+    <script>
+        $(document).ready(function()
+        {
+            $("#top").click(function()
+            {
+                $("#main").fadeToggle(1900)
+            })
+
+            $("#p1").fadeTo(0,0.50)
+
+            $("#p1").click(function()
+            {
+                $("#p1").fadeTo(1000,0.99)
+            })
+
+            $("#p1").mouseout(function()
+            {
+               $(this).fadeTo(1000,0.50) 
+            })
+            $(".text").fadeOut(1000)
+            $("h2").click(function()
+            {
+                $(".text").fadeIn(1000)
+            })
+
+            $("h2").mouseout(function()
+            {
+                $(".text").fadeOut(1000)
+            })
+        })
+    
+    
+    </script>
+    <h2>About Us</h2>
+    <img src="images/p22.jpg" id="p1">
+    <p class="text">
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus sequi illo optio voluptate fugit autem nesciunt commodi atque fuga, vitae facilis error odio reprehenderit a ex totam ratione, sunt veritatis!
+    Voluptate quae nihil asperiores voluptatum illo non, distinctio officia mollitia aliquam esse ad nisi cupiditate quis inventore omnis culpa sunt voluptas dolorum perferendis ipsam ea vitae neque error tempora. Itaque!
+    Rem ipsam atque molestias aut qui accusantium excepturi similique temporibus expedita adipisci? Adipisci voluptatibus iure, totam omnis dolores incidunt, quo non quia consequatur rerum ipsa laborum quis aperiam qui. Non?
+    Quas veritatis architecto, asperiores consequuntur totam corporis nihil tempore molestiae sit saepe ad obcaecati repellat? Eius id minima fuga iure repellendus explicabo ipsam perspiciatis facere facilis, sequi aut libero sit.
+    Nostrum nihil in dolorum inventore repudiandae deserunt fugit modi accusamus error sit officiis quam ut ex illo eos voluptates quae unde velit eum, accusantium nam ducimus. Vitae culpa distinctio a!
+    </p>
+
+    
+</body>
+</html>
