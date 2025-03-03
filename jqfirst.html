@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<style>
+    *{
+        padding:0px;
+        margin:0px;
+    }
+
+    header{
+        color:brown;
+        text-align:center;
+        font-size:50px;
+        font-family:arial black;
+    }
+
+    .pic
+    {
+        width:20%;
+        padding:1%;
+    }
+
+    article
+    {
+        border:2px black dashed;
+        padding:20px;
+        font-size:15px;
+        font-family:Georgia, 'Times New Roman', Times, serif
+    }
+
+    article p
+    {
+        text-indent:80px;
+        text-align:justify;
+    }
+
+    #about
+    {
+        color:green;
+        display:inline;
+    }
+
+</style>
+<body>
+    <header>
+        SCENERY
+        <span class="material-symbols-outlined">search</span>
+    </header>
+
+    <h1 id="about">About Us</h1>
+    <article>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias a dolor minima veniam culpa magni quia minus corrupti facilis tempore illo accusamus assumenda earum sequi vero veritatis enim, fugit explicabo.
+            Ad voluptatem quisquam aperiam dolore cumque modi iure libero tenetur a, cupiditate architecto ipsa vitae optio voluptatibus eum soluta, dicta ipsam! Nihil dolorum necessitatibus delectus similique dolorem quos, at nemo.
+            Consectetur molestiae dicta modi nemo soluta possimus accusamus, doloribus esse maiores veritatis placeat facilis excepturi illum sint laboriosam natus. Minus eos nam, eaque alias officia quia inventore voluptatem accusantium. Vero.
+            Omnis aperiam facilis assumenda non corrupti quibusdam exercitationem quia earum natus numquam distinctio, eveniet animi expedita possimus ea adipisci? Doloremque commodi vero rerum cum consequatur labore, qui cupiditate iure rem.
+            Distinctio totam voluptates soluta laboriosam modi possimus tempore, expedita quos cupiditate tempora porro delectus consectetur in, unde quidem assumenda numquam esse adipisci fugit illo saepe. Repellendus iste deserunt eius temporibus.
+            
+            <img class="pic" src="images/p1.jpg" align="left">
+
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor impedit est incidunt commodi reiciendis vero porro officiis. Sit tempora, alias id consectetur tenetur molestiae, nostrum non velit odit quidem distinctio?
+            Vero officia quaerat at, non earum accusamus error. Quibusdam, dignissimos unde quas placeat ab deserunt mollitia aperiam, molestiae, delectus sit maiores quod minima. Voluptatum aliquid at error perferendis mollitia delectus.
+            Aliquid molestias beatae eum a minus aperiam molestiae! In repellendus adipisci maxime amet a earum, facere laudantium. Aliquid, iure. Sint nisi placeat tempore, perspiciatis officia distinctio pariatur laboriosam porro consectetur?
+        </p>
+
+    </article>
+<script>
+
+    $(document).ready(function()
+    {
+        /*
+        $(".pic").click(function()
+            {
+                $(this).hide(1000,show)
+             })
+        */
+       /*
+        $("#about").mouseover(function()
+            {
+                $("#about").hide("slow")
+            })
+        */
+        
+        $("p").click(function()
+        {
+            $(this).hide("fast")
+
+        
+        }
+    )
+    
+    //$("p").hide(2000,show)
+
+    })
+    function show()
+    {
+        //alert("zoom out/ and Showing page")
+        $("p").show(2000)
+    }
+
+    function unhide()
+    {
+        setTimeout("show()",10000)
+    }
+    
+</script>
+    
+</body>
+</html>
