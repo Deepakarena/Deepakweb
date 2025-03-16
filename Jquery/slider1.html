@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    </head>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.cycle2/2.1.6/jquery.cycle2.min.js"></script>
+ 
+    <style>
+    #banner
+    {
+        width:100%;
+        background:blue;
+        height:600px;
+        
+    }
+        
+    .pic
+    {
+        width:100%;
+        position:absolute;
+        height:600px;
+        left:20%;
+    }
+        
+    </style>
+        
+<body>
+    <div id="banner">
+    <div class="cycle-slideshow"
+    data-cycle-fix="scrollHorz"
+    data-cycle-timeout="2000"
+    data-cycle-prev="#prev"
+    data-cycle-next="#next"
+>  
+
+
+<img src="images/p1.jpg" class="pic">
+<img src="images/p2.jpg" class="pic">
+<img src="images/p3.jpg" class="pic">
+<img src="images/p4.jpg" class="pic">
+<img src="images/p5.jpg" class="pic">
+<img src="images/p6.jpg" class="pic">
+</div>
+
+<div class="center">
+<a href=# id="prev"> Prev</a>
+<a href=# id="next"> Next</a>
+</div>
+
+
+</body>
+</html>
